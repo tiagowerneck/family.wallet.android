@@ -1,0 +1,7 @@
+<resources>
+    <string name="font_p1">fonts/PlusJakartaSans-Regular.ttf</string>
+    <string name="font_p2">fonts/PlusJakartaSans-Medium.ttf</string>
+    <string name="font_p3">fonts/PlusJakartaSans-Bold.ttf</string>
+    <string name="font_p4">fonts/PlusJakartaSans-ExtraBold.ttf</string>
+    <string name="font_p5">fonts/PlusJakartaSans-Light.ttf</string>
+</resources>

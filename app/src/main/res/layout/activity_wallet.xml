@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.WalletActivity"
+    android:background="@color/background">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listCards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viewAddCard"
+        android:layout_marginBottom="24dp"/>
+
+    <RelativeLayout
+        android:id="@+id/viewAddCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button"
+        android:text="@string/login_btn_login"
+        style="@style/app.widget.btn.fill.rounded"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_circle"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet_btn_new"
+                style="@style/app.widget.text.p4"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+        <Button android:id="@+id/btnAddCard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button"
+            android:background="@color/transparent"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/viewPopUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blackTransparent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/app_widget_view_rounded_top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView android:id="@+id/lblTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deseja mesmo excluir este cartão?"
+                    style="@style/app.widget.text.p2"
+                    android:textSize="18dp"
+                    android:textColor="@color/text4"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    />
+
+                <TextView android:id="@+id/lblDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ao confirmar, Latam Pass - Crédito | Filho, não estará mais disponível para uso."
+                    style="@style/app.widget.text.p2"
+                    android:textSize="16dp"
+                    android:textColor="@color/text4"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    />
+
+                <EditText android:id="@+id/txtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button"
+                    style="@style/app.widget.edittext.singleline.rounded"
+                    android:textSize="16dp"
+                    android:textColor="@color/text4"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:hint="@string/wallet_txt"
+                    />
+
+                <Button android:id="@+id/btnActionSecond"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_link"
+                    android:text="@string/wallet_btn_cancel"
+                    style="@style/app.widget.btn.link"
+                    android:layout_marginTop="32dp"
+                    />
+
+                <Button android:id="@+id/btnActionPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button"
+                    android:text="@string/wallet_btn_save"
+                    style="@style/app.widget.btn.fill"
+                    android:layout_marginTop="16dp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

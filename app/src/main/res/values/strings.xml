@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Familia</string>
+    <string name="title_activity_wallet">Meus Cartões</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="login_txt_cpf">CPF</string>
+    <string name="login_txt_password_card">Senha do cartão</string>
+    <string name="login_btn_login">Entrar</string>
+    <string name="login_msg_cpf_required">Por favor, preencha o campo CPF.</string>
+    <string name="login_msg_cpf_invalid">Por favor, preencha o um CPF válido.</string>
+    <string name="login_msg_password_invalid">Por favor, preencha sua senha.</string>
+    <string name="login_msg_password_required">Por favor, uma senha de pelo menos 4 digitos.</string>
+
+    <string name="wallet_txt">Apelido cartão adicional</string>
+
+    <string name="wallet_lbl_add_title">Como quer nomear este cartão?</string>
+
+    <string name="wallet_lbl_delete_title">Deseja mesmo excluir este cartão?</string>
+    <string name="wallet_lbl_delete_description">Ao confirmar,\n%s,\nnão estará mais disponível para uso.</string>
+
+    <string name="wallet_lbl_edit_title">Como quer renomear este cartão?</string>
+
+    <string name="wallet_btn_new">Cartão adicional</string>
+    <string name="wallet_btn_cancel">Cancelar</string>
+    <string name="wallet_btn_add">Adicionar cartão</string>
+    <string name="wallet_btn_save">Salvar alterações</string>
+    <string name="wallet_btn_delete">Excluir cartão</string>
+
+    <string name="wallet_lbl_card_title">%s - %s</string>
+
+</resources>
