@@ -7,9 +7,9 @@
     <string name="login_txt_password_card">Senha do cartão</string>
     <string name="login_btn_login">Entrar</string>
     <string name="login_msg_cpf_required">Por favor, preencha o campo CPF.</string>
-    <string name="login_msg_cpf_invalid">Por favor, preencha o um CPF válido.</string>
+    <string name="login_msg_cpf_invalid">Por favor, preencha um CPF válido.</string>
     <string name="login_msg_password_invalid">Por favor, preencha sua senha.</string>
-    <string name="login_msg_password_required">Por favor, uma senha de pelo menos 4 digitos.</string>
+    <string name="login_msg_password_required">Por favor, uma senha de pelo menos 4 dígitos.</string>
 
     <string name="wallet_txt">Apelido cartão adicional</string>
 

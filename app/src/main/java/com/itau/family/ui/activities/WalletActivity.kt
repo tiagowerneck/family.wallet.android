@@ -21,6 +21,7 @@ import com.itau.family.models.enuns.CardActions
 import com.itau.family.network.CreditCardClient
 import com.itau.family.ui.adapters.WalletAdapter
 import com.itau.family.ui.common.CustomTypefaceSpan
+import com.itau.family.ui.common.hideKeyboard
 
 class WalletActivity : BaseActivity() {
 
@@ -96,6 +97,7 @@ class WalletActivity : BaseActivity() {
         }
 
         btnActionSecond.setOnClickListener {
+            activity.hideKeyboard()
             viewPopUp.visibility = View.GONE
         }
     }
@@ -136,6 +138,7 @@ class WalletActivity : BaseActivity() {
         btnActionPrimary.apply {
             text = getString(R.string.wallet_btn_add)
             setOnClickListener {
+                activity.hideKeyboard()
                 CreditCardClient(activity).add(txtDescription.text.toString())
                 viewPopUp.visibility = View.GONE
             }
@@ -154,7 +157,7 @@ class WalletActivity : BaseActivity() {
         btnActionPrimary.apply {
             text = getString(R.string.wallet_btn_save)
             setOnClickListener {
-
+                activity.hideKeyboard()
                 CreditCardClient(activity).edit(item.id, txtDescription.text.toString())
                 viewPopUp.visibility = View.GONE
             }
@@ -182,6 +185,7 @@ class WalletActivity : BaseActivity() {
         btnActionPrimary.apply {
             text = getString(R.string.wallet_btn_delete)
             setOnClickListener {
+                activity.hideKeyboard()
                 CreditCardClient(activity).delete(item.id)
                 viewPopUp.visibility = View.GONE
             }
